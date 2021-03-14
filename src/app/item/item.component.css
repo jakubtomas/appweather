@@ -1,0 +1,14 @@
+/*one city item*/
+
+.item {
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 10px;
+
+}
+.arrow {
+    cursor: pointer;
+    display: block;
+    float: right;
+    margin-right: 10px;
+}

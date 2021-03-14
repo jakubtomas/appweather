@@ -1,0 +1,21 @@
+<div class="list">
+    <ul>
+        <li *ngFor="let city of cities">
+            <a [routerLink]="['/place', city.id ]">{{ city.name }}</a>
+        </li>
+
+    </ul>
+</div>
+
+
+<!--
+ <div *ngFor="let city of cities">
+
+     <h3>
+         <a [title]="city.id+ ' details'" [routerLink]="['/place', city.id]">
+             {{ city.name }}
+         </a>
+     </h3>
+
+ </div>
+-->
