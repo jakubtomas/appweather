@@ -1,6 +1,6 @@
 <div class="list">
     <ul>
-        <li *ngFor="let city of cities">
+        <li *ngFor="let city of cities ">
             <a [routerLink]="['/place', city.id ]">{{ city.name }}</a>
         </li>
 

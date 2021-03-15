@@ -1,6 +1,14 @@
+.map-container {
+    width: 80%;
+    height: 100vh;
+    display: inline-flex;
+    position: absolute;
+}
+
 
 menu {
     max-width: 360px;
+    width: 20%;
     background-color: #EFEFEF;
     margin: 0;
     padding: 0;
@@ -11,6 +19,7 @@ menu {
 app-map {
 
 }
+
 .search-bar {
     margin: 0;
     padding: 1px;
@@ -25,7 +34,7 @@ app-map {
     width: 70%;
     padding: 15px;
     border-radius: 10px;
-    margin : 0 auto;
+    margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
     border-top: none;
@@ -37,8 +46,7 @@ app-map {
     box-shadow: 2px 4px 3px 1px #c1b7b7;
 }
 
-input[type="text"]
-{
+input[type="text"] {
 
     font-size: 26px;
     line-height: 1;
@@ -46,12 +54,11 @@ input[type="text"]
     color: #534D4D;
 
 }
-input[type="text"]::placeholder
-{
+
+input[type="text"]::placeholder {
 
     color: #534D4D;
 }
-
 
 
 /*navbar */
@@ -81,10 +88,25 @@ input[type="text"]::placeholder
 }
 
 
+.item {
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 10px;
+
+}
+
+.arrow {
+    cursor: pointer;
+    display: block;
+    float: right;
+    margin-right: 10px;
+}
+
 
 /*calendar*/
 
 .calendar {
     position: fixed;
     bottom: 10px;
-    width: 75%;}
+    width: 75%;
+}

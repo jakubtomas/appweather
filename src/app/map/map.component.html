@@ -1,0 +1,26 @@
+<div>
+
+    <menu class="menu">
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search..">
+        </div>
+
+
+        <router-outlet></router-outlet>
+
+        <div class="calendar">
+            <label for="start">Start date:</label>
+
+            <input type="date" id="start" name="trip-start"
+                   value="2018-07-22"
+                   min="2018-01-01" max="2018-12-31">
+
+        </div>
+
+
+    </menu>
+
+
+    <div id='map' class="map-container"></div>
+</div>
