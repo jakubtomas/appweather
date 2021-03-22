@@ -5,6 +5,11 @@ menu {
     margin: 0;
     padding: 0;
     height: 100vh;
+    display: inline-block;
+}
+
+app-map {
+
 }
 .search-bar {
     margin: 0;

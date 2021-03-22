@@ -1,7 +1,7 @@
 <div class="list">
     <ul>
-        <li *ngFor="let city of cities">
-            <a [routerLink]="['/place', city.id ]">{{ city.name }}</a>
+        <li *ngFor="let city of cities ">
+            <a [routerLink]="['/place', city.id ]" (click)="addNewItem(city.name)">{{ city.name }}</a>
         </li>
 
     </ul>
@@ -9,7 +9,7 @@
 
 
 <!--
- <div *ngFor="let city of cities">
+ <div *ngFor="et city of cities">
 
      <h3>
          <a [title]="city.id+ ' details'" [routerLink]="['/place', city.id]">
