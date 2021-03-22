@@ -7,18 +7,18 @@ import * as mapboxgl from "mapbox-gl";
     providedIn: 'root'
 })
 export class MapService {
-    map: Mapboxgl.Map;
+    /*map: Mapboxgl.Map;
     style = 'mapbox://styles/mapbox/streets-v11';
     lat = 48.71647290;
     lng = 21.260695998;
     zoom = 12;
-
+*/
     constructor() {
         // @ts-ignore
         Mapboxgl.accessToken = environment.mapbox.accessToken;
     }
 
-    buildMap() {
+    /*buildMap() {
         this.map = new Mapboxgl.Map({
             container: 'map',
             style: this.style,
@@ -30,7 +30,7 @@ export class MapService {
             .addTo(this.map);
 
         this.map.addControl(new mapboxgl.NavigationControl());
-    }
+    }*/
 
 
     /*

@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {map} from "rxjs/operators";
+import {City} from "../entities/city";
 
 @Injectable({
     providedIn: 'root'
@@ -38,30 +39,14 @@ export class MapsService {
     }
 
     //todo change type of observable create entities
-    getAllTowns(): Observable<any> {
+    getAllTowns(): Observable<Array<City>> {
 
-        return this.http.get(this.serverUrl + "getTowns").pipe(
-            map(allTowns => {
-
-                    console.log(allTowns);
-                    return allTowns;
-                }
-            )
-
-            // todo catch error
-            /* catchError(error => {
-               console.log('ERROR HERE SHIT');
-               console.log(' error from get users' + error);
-               console.log(' error from get users' + error.toString());
-               console.log(' error from get users' + JSON.stringify(error));
-
-               return this.processHttpError(error);
-             })*/
-        )
+        return this.http.get<Array<City>>(this.serverUrl + "getTowns")
         //catchError(error => this.processHttpError(error))
 
     }
 
+    //todo change
     getOneTown(placeId:number): Observable<any> {
 
         return this.http.get(this.serverUrl + "getMeteoData/"+ placeId)

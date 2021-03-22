@@ -1,14 +1,45 @@
 <div>
 
     <menu class="menu">
-        <button (click)="flyTo()">CLIKC</button>
 
+
+        <!--<form (ngSubmit)="onSubmit()" class="form-inline my-2 my-lg-0">
+            <input (keyup)="searchSerial(search)" [(ngModel)]="search" aria-label="Search" class="form-control mr-sm-2"
+                   name="search"
+                   placeholder="Search" type="search">
+        </form>-->
         <div class="search-bar">
-            <input type="text" placeholder="Search..">
+            <input type="text" placeholder="Search.."
+                   name="search"
+                   [(ngModel)]="searchParameter"
+                   (input)="searchValue()">
         </div>
 
 
-        <router-outlet (newItemEvent)="addItem($event)"></router-outlet>
+        <div class="list">
+            <ul>
+                <li *ngFor="let city of cities ">
+                    <a (click)="flyTo(city)">{{ city.name }}</a>
+                </li>
+
+            </ul>
+
+
+        </div>
+
+
+        <div class="data" *ngIf="oneCityDetails">
+            <!--
+                        <h3> {{selectedPlace}} </h3>
+                        <p>Temperature </p>
+
+                        <p>{{oneCityDetails | json}}</p>
+            -->
+            <h3> {{selectedPlace}} </h3>
+
+            <p>{{oneCityDetails.type}} {{oneCityDetails.unit}}</p>
+
+        </div>
 
         <div class="calendar">
             <label for="start">Start date:</label>
