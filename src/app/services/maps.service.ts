@@ -39,9 +39,17 @@ export class MapsService {
     }
 
     //todo change type of observable create entities
-    getAllTowns(): Observable<Array<City>> {
+    getAllTowns(): Observable<any> {
 
-        return this.http.get<Array<City>>(this.serverUrl + "getTowns")
+        return this.http.get(this.serverUrl + "getTowns");
+
+
+        /* return this.http.get(this.serverUrl + "getTowns").pipe(
+             map(data => {console.log(data)})
+         );*/
+
+
+        // return this.http.get<Array<City>>(this.serverUrl + "getTowns")
         //catchError(error => this.processHttpError(error))
 
     }
