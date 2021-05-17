@@ -55,8 +55,7 @@ export class MapsService {
     }
 
     //todo change
-    getOneTown(placeId:number): Observable<any> {
-
+    getOneTown(placeId: number): Observable<any> {
         return this.http.get(this.serverUrl + "getMeteoData/"+ placeId)
 
     }

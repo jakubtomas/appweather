@@ -27,24 +27,7 @@ export class MapComponent implements OnInit {
     public selectedPlace: string;
 
     public oneCityDetails: Array<any>;
-    /*
 
-        private defaultC: any = [
-           {"id": 1, "name": "Presov","latitude": "xxxxx", "altitude": "xxxxx" },
-           {"id": 2, "name": "Poprad","latitude": "xxxxx", "altitude": "xxxxx" },
-           {"id": 3, "name": "Kosice","latitude": "xxxxx", "altitude": "xxxxx" },
-           {"id": 4, "name": "Bratislava","latitude": "xxxxx", "altitude": "xxxxx" },
-           {"id": 5, "name": "Roznava","latitude": "xxxxx", "altitude": "xxxxx" },
-           {"id": 6, "name": "Tatry","latitude": "xxxxx", "altitude": "xxxxx" },
-           {"id": 7, "name": "Praha","latitude": "xxxxx", "altitude": "xxxxx" },
-           {"id": 8, "name": "Strba","latitude": "xxxxx", "altitude": "xxxxx" },
-           {"id": 9, "name": "Sabinov","latitude": "xxxxx", "altitude": "xxxxx" },
-           {"id": 10, "name": "Bardejov","latitude": "xxxxx", "altitude": "xxxxx" },
-           {"id": 11, "name": "Presov","latitude": "xxxxx", "altitude": "xxxxx" },
-           {"id": 12, "name": "Presov","latitude": "xxxxx", "altitude": "xxxxx" }
-
-         ];
-    */
 
     ///defualt setting
     map: mapboxgl.Map;

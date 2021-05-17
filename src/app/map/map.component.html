@@ -1,8 +1,5 @@
 <div>
-
     <menu class="menu">
-
-
         <!--<form (ngSubmit)="onSubmit()" class="form-inline my-2 my-lg-0">
             <input (keyup)="searchSerial(search)" [(ngModel)]="search" aria-label="Search" class="form-control mr-sm-2"
                    name="search"
@@ -21,24 +18,14 @@
                 <li *ngFor="let city of cities ">
                     <a (click)="flyTo(city)">{{ city.name }}</a>
                 </li>
-
             </ul>
-
-
         </div>
 
 
         <div class="data" *ngIf="oneCityDetails">
-            <!--
-                        <h3> {{selectedPlace}} </h3>
-                        <p>Temperature </p>
 
-                        <p>{{oneCityDetails | json}}</p>
-            -->
             <h3> {{selectedPlace}} </h3>
-
             <p>{{oneCityDetails.type}} {{oneCityDetails.unit}}</p>
-
         </div>
 
         <!--<div class="calendar">
